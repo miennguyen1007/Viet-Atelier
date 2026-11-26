@@ -28,9 +28,10 @@ export class HomePage {
     await this.quotationForm.locator('button[type="submit"]').click();
   }
 
-  async expectDemoNotSentNotice() {
-    await expect(this.page.getByRole("status")).toBeVisible();
-    await expect(this.page.getByRole("status")).toContainText(/chưa được gửi|nothing has been sent/);
+  async expectRequestSentNotice() {
+    const notice = this.quotationForm.getByRole("status");
+    await expect(notice).toBeVisible();
+    await expect(notice).toContainText(/đã được gửi|has been sent/);
   }
 
   async openMobileMenu() {

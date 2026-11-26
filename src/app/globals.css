@@ -121,9 +121,12 @@ img { display: block; }
 .contact-section { display: grid; grid-template-columns: .85fr 1.15fr; gap: 10vw; padding: 104px max(44px, calc((100vw - 1280px) / 2)); background: #e9e7df; }
 .contact-intro h2 { margin: 26px 0 18px; font-family: var(--serif); font-size: clamp(43px, 4.7vw, 64px); font-weight: 400; letter-spacing: -.04em; line-height: 1.08; }
 .contact-intro > p { max-width: 360px; color: var(--ink-soft); font-family: var(--serif); font-size: 17px; line-height: 1.65; }
+.contact-phone { display: grid; gap: 7px; margin-top: 24px; color: var(--ink-soft); font-size: 10px; }
+.contact-phone a { width: fit-content; color: var(--brand-red-deep); font-size: 14px; letter-spacing: .04em; }
 .contact-aside-note { max-width: 300px; margin-top: 36px; padding-left: 13px; border-left: 1px solid var(--brand-red); color: #706d65; font-size: 10px; line-height: 1.65; }
 .quotation-form { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 18px; align-content: center; }
 .quotation-form label { display: flex; flex-direction: column; gap: 9px; color: var(--ink-soft); font-size: 9px; letter-spacing: .09em; text-transform: uppercase; }
+.required-mark { color: var(--brand-red-deep); }
 .quotation-form input, .quotation-form textarea { width: 100%; border: 0; border-bottom: 1px solid #bdb9ac; border-radius: 0; outline: 0; background: transparent; color: var(--ink); font-size: 13px; letter-spacing: 0; text-transform: none; }
 .quotation-form input { height: 39px; }
 .quotation-form textarea { min-height: 85px; padding: 12px 0; resize: vertical; }

@@ -108,7 +108,11 @@ export default function HomePage() {
           <span className="eyebrow">{isVietnamese ? "BẮT ĐẦU CUỘC TRÒ CHUYỆN" : "START A CONVERSATION"}</span>
           <h2>{isVietnamese ? <>Cho những ngày<br />muốn trở về.</> : <>For the days<br />you long to come home.</>}</h2>
           <p>{isVietnamese ? "Bạn đang tìm món đồ cho nhà mình hay một dự án nội thất, khách sạn? Hãy chia sẻ đôi điều cùng VIET ATELIER." : "Looking for something for home or a hospitality interior? Tell VIET ATELIER a little about what you have in mind."}</p>
-          <div className="contact-aside-note">{isVietnamese ? "Bản mẫu hiện chưa kết nối hệ thống nhận yêu cầu." : "Enquiry delivery is not connected in this demo."}</div>
+          <div className="contact-phone">
+            <span>{isVietnamese ? "Điện thoại" : "Call us"}</span>
+            <a href="tel:+84901462897">0901.462.897</a>
+          </div>
+          <div className="contact-aside-note">{isVietnamese ? "Yêu cầu sẽ được gửi qua email sau khi cấu hình thông tin gửi thư trong hệ thống." : "Enquiries are sent by email once the delivery settings are configured."}</div>
         </div>
         <QuotationForm />
       </section>

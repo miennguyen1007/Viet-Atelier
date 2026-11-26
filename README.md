@@ -24,6 +24,6 @@ npm run test:e2e
 
 - The product titles and descriptions are sample labels, not verified product catalogue facts.
 - Images are copied from the supplied Downloads folders. They are visual references, not verified Vietatelier products or delivered projects.
-- The quotation form performs browser-side validation only. It is not connected to email, CRM, or a database and must not be used to receive real enquiries until that integration is configured.
+- The quotation form sends submissions through the server-side Resend API after email delivery is configured. Add `RESEND_API_KEY`, `QUOTATION_TO_EMAIL`, and `QUOTATION_FROM_EMAIL` to the Vercel project's Production environment variables. The sender domain must be verified with Resend. Never expose the API key in client-side code or commit it to Git.
 - No catalogue PDF was provided, so this template does not claim to offer a catalogue download.
 - Add approved brand assets, product metadata, real project photography, a catalogue PDF, the quotation recipient/workflow, and hosting configuration before production.
